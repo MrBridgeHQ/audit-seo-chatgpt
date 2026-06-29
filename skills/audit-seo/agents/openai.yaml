@@ -1,0 +1,7 @@
+interface:
+  display_name: "SEO Audit"
+  short_description: "Audit web SEO from code"
+  default_prompt: "Use $audit-seo to audit this web project for technical, metadata, content, and AI-search SEO issues."
+
+policy:
+  allow_implicit_invocation: true
