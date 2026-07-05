@@ -1,4 +1,4 @@
-# Référence — Seuils numériques SEO
+# Référence - Seuils numériques SEO
 
 Référencé par toutes les checklists. Sources : Google Search Central, web.dev, retours d'expérience industrie. Les valeurs sont **indicatives**, pas absolues.
 
@@ -8,7 +8,7 @@ Référencé par toutes les checklists. Sources : Google Search Central, web.dev
 |---|---|---|---|---|
 | `<title>` | 30 | 50–60 | 60–70 | Tronqué en SERP au-delà de ~580 px (≈ 60 caractères latins) |
 | Meta description | 70 | 120–160 | 160 | Mobile : ~120 ; desktop : jusqu'à 160 |
-| URL slug | — | 3–5 mots | — | Privilégier la concision |
+| URL slug | - | 3–5 mots | - | Privilégier la concision |
 | H1 | 20 | 40–70 | 70 | Lisible humainement |
 | Alt text | 5 | 10–125 caractères | 125 | Descriptif, pas du keyword stuffing |
 
@@ -40,7 +40,7 @@ Référencé par toutes les checklists. Sources : Google Search Central, web.dev
 
 > Mesuré au 75e percentile sur trafic réel (CrUX), pas en lab seul.
 
-## Performance — autres seuils utiles
+## Performance - autres seuils utiles
 
 | Métrique | Cible |
 |---|---|
@@ -106,7 +106,7 @@ Référencé par toutes les checklists. Sources : Google Search Central, web.dev
 | `Strict-Transport-Security` | `max-age=63072000; includeSubDomains; preload` |
 | `X-Robots-Tag` | utilisé en alternative à meta robots quand HTML non modifiable |
 
-## Score /100 — barème indicatif du skill
+## Score /100 - barème indicatif du skill
 
 Le skill calcule un score indicatif :
 

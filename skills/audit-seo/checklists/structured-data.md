@@ -1,4 +1,4 @@
-# Checklist — Données structurées (JSON-LD / Schema.org)
+# Checklist - Données structurées (JSON-LD / Schema.org)
 
 Référencé par `SKILL.md` § 4.4.
 
@@ -25,9 +25,9 @@ Référencé par `SKILL.md` § 4.4.
   - `image` (photo de l'auteur)
   - `jobTitle` (rôle / titre)
   - `worksFor: { @type: Organization, name, url }`
-  - `sameAs: [...]` avec liens vers profils sociaux et académiques (LinkedIn, ORCID, Wikipedia si applicable, profils universitaires) — signal d'authoritativeness fort pour les LLMs
+  - `sameAs: [...]` avec liens vers profils sociaux et académiques (LinkedIn, ORCID, Wikipedia si applicable, profils universitaires) - signal d'authoritativeness fort pour les LLMs
   - `knowsAbout: [...]` (sujets de compétence) pour les contenus techniques
-- [ ] **`reviewedBy`** sur les contenus YMYL (Your Money Your Life — santé, finance, droit, science) : `reviewedBy: { @type: Person, name, jobTitle, ... }` avec un expert distinct de l'auteur. Signal d'authoritativeness amplifié.
+- [ ] **`reviewedBy`** sur les contenus YMYL (Your Money Your Life - santé, finance, droit, science) : `reviewedBy: { @type: Person, name, jobTitle, ... }` avec un expert distinct de l'auteur. Signal d'authoritativeness amplifié.
 - [ ] `BreadcrumbList` sur pages profondes
 
 ### E-commerce
@@ -71,7 +71,7 @@ Référencé par `SKILL.md` § 4.4.
 - 🚨 `FAQPage` avec questions non visibles à l'utilisateur → pénalité manuelle Google
 - 🚨 `Product` avec `price: "0"` ou `availability` incorrect
 - 🚨 `Article` sans `author` ou avec `author` en simple string au lieu d'un objet `Person`/`Organization`
-- 🚨 `author: { @type: Person, name: "Jean Dupont" }` minimal sans `url` / `sameAs` / `jobTitle` / `worksFor` — manque le signal E-E-A-T attendu en 2026. Google et les LLMs s'appuient sur ces champs pour évaluer l'authoritativeness; l'absence laisse de la performance SEO sur la table, particulièrement sur les contenus YMYL.
+- 🚨 `author: { @type: Person, name: "Jean Dupont" }` minimal sans `url` / `sameAs` / `jobTitle` / `worksFor` - manque le signal E-E-A-T attendu en 2026. Google et les LLMs s'appuient sur ces champs pour évaluer l'authoritativeness; l'absence laisse de la performance SEO sur la table, particulièrement sur les contenus YMYL.
 - 🚨 Plusieurs `Organization` différents sur le même site
 - 🚨 `BreadcrumbList` qui ne reflète pas l'arborescence réelle
 - 🚨 Données structurées générées en JS côté client → parfois ratées par les crawlers

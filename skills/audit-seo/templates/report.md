@@ -4,7 +4,7 @@ Remplace toutes les {{placeholders}} et les sections "À compléter".
 Conserve l'ordre des sections.
 -->
 
-# Audit SEO — {{nom_du_projet_ou_url}}
+# Audit SEO - {{nom_du_projet_ou_url}}
 
 > Date : {{date}}
 > Stack détectée : {{framework}} {{version}}
@@ -21,7 +21,7 @@ Conserve l'ordre des sections.
 - **Impact SEO estimé** : {{description courte de l'impact sur l'indexation, le ranking et le CTR}}
 
 ### Top 3 à 5 problèmes prioritaires
-1. {{problème — fichier/url — impact}}
+1. {{problème - fichier/url - impact}}
 2. {{...}}
 3. {{...}}
 
@@ -32,7 +32,7 @@ Conserve l'ordre des sections.
 > Liste détaillée des findings de sévérité **Critique** et **Élevée**.
 > Pour les sévérités Moyenne et Faible, voir les sections par catégorie ci-dessous.
 
-### 🟥 Finding #1 — {{titre}}
+### 🟥 Finding #1 - {{titre}}
 - **Sévérité** : Critique
 - **Catégorie** : {{Technique | Métadonnées | Structure HTML | Données structurées | Performance | Contenu}}
 - **Fichier ou URL** : `{{chemin/fichier.ext:ligne}}` ou `{{https://...}}`
@@ -47,24 +47,24 @@ Conserve l'ordre des sections.
   {{extrait corrigé}}
   ```
 
-### 🟧 Finding #2 — {{titre}}
+### 🟧 Finding #2 - {{titre}}
 *(même structure)*
 
 ---
 
 ## Audit technique
 
-- [ ] `robots.txt` — {{statut + remarques}}
-- [ ] `sitemap.xml` — {{statut + remarques}}
-- [ ] Canonical URLs — {{statut}}
-- [ ] Redirections — {{statut}}
-- [ ] Status codes — {{statut}}
-- [ ] `noindex` / `nofollow` — {{statut}}
-- [ ] Structure des URLs — {{statut}}
-- [ ] Pagination — {{statut}}
-- [ ] hreflang — {{statut ou N/A}}
-- [ ] 404 et routes orphelines — {{statut}}
-- [ ] Routing framework — {{statut}}
+- [ ] `robots.txt` - {{statut + remarques}}
+- [ ] `sitemap.xml` - {{statut + remarques}}
+- [ ] Canonical URLs - {{statut}}
+- [ ] Redirections - {{statut}}
+- [ ] Status codes - {{statut}}
+- [ ] `noindex` / `nofollow` - {{statut}}
+- [ ] Structure des URLs - {{statut}}
+- [ ] Pagination - {{statut}}
+- [ ] hreflang - {{statut ou N/A}}
+- [ ] 404 et routes orphelines - {{statut}}
+- [ ] Routing framework - {{statut}}
 
 **Findings additionnels** :
 {{liste des findings Moyenne/Faible}}
@@ -73,8 +73,8 @@ Conserve l'ordre des sections.
 
 ## Métadonnées
 
-- [ ] `<title>` — longueur, unicité, cohérence par template
-- [ ] Meta description — longueur, unicité, présence
+- [ ] `<title>` - longueur, unicité, cohérence par template
+- [ ] Meta description - longueur, unicité, présence
 - [ ] Open Graph (`og:title`, `og:description`, `og:image`, `og:url`, `og:type`)
 - [ ] Twitter Cards (`twitter:card`, `twitter:title`, `twitter:image`)
 - [ ] Canonical
@@ -91,7 +91,7 @@ Conserve l'ordre des sections.
 
 - [ ] Un seul `<h1>` par page (quand pertinent)
 - [ ] Hiérarchie Hn logique (pas de saut H1 → H3)
-- [ ] Liens internes — quantité et qualité des ancres
+- [ ] Liens internes - quantité et qualité des ancres
 - [ ] Attributs `alt` sur toutes les images de contenu
 - [ ] Liens cassés ou suspects
 - [ ] Sémantique HTML (`<main>`, `<article>`, `<nav>`, `<header>`, `<footer>`)
@@ -138,7 +138,7 @@ Conserve l'ordre des sections.
 - [ ] Pages pauvres en contenu (thin content)
 - [ ] Cannibalisation potentielle (pages se chevauchant sur même intention)
 - [ ] Intention de recherche alignée avec contenu
-- [ ] Maillage interne — profondeur de clic, ancres descriptives
+- [ ] Maillage interne - profondeur de clic, ancres descriptives
 - [ ] Slugs (longueur, lisibilité, mots-clés)
 - [ ] Cohérence langue/pays (lang HTML, hreflang, contenu localisé)
 
@@ -158,7 +158,7 @@ Conserve l'ordre des sections.
 | P3 | {{...}} | L | S | `{{...}}` |
 
 > Effort : S = < 1h, M = 1–4h, L = 0,5–2j, XL = > 2j.
-> Impact : S/M/L/XL — impact SEO estimé.
+> Impact : S/M/L/XL - impact SEO estimé.
 
 ---
 

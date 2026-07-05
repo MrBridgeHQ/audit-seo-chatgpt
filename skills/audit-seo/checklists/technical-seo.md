@@ -1,4 +1,4 @@
-# Checklist — SEO technique
+# Checklist - SEO technique
 
 Référencé par `SKILL.md` § 4.1 et § 3 étape 4.
 
@@ -86,9 +86,9 @@ Référencé par `SKILL.md` § 4.1 et § 3 étape 4.
 - [ ] Présent sur chaque variante linguistique
 - [ ] Réciprocité complète (A → B implique B → A)
 - [ ] `x-default` pour la version par défaut
-- [ ] Codes valides (`fr`, `fr-FR`, `en-US`, etc.) — pas `fr-fr`
+- [ ] Codes valides (`fr`, `fr-FR`, `en-US`, etc.) - pas `fr-fr`
 - [ ] Cohérence avec `<html lang="...">` et le contenu réel
-- [ ] Implémenté soit dans `<head>`, soit dans le sitemap, soit en HTTP headers — un seul endroit
+- [ ] Implémenté soit dans `<head>`, soit dans le sitemap, soit en HTTP headers - un seul endroit
 
 ## 404 & routes orphelines
 

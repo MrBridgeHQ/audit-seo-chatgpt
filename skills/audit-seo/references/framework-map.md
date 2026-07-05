@@ -1,4 +1,4 @@
-# Référence — Correspondance fichiers ↔ framework
+# Référence - Correspondance fichiers ↔ framework
 
 Référencé par `SKILL.md` § 3 étape 1.
 

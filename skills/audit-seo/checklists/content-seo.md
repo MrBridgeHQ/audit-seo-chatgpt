@@ -1,4 +1,4 @@
-# Checklist — Contenu, structure HTML & maillage interne
+# Checklist - Contenu, structure HTML & maillage interne
 
 Référencé par `SKILL.md` § 4.3 et § 4.6.
 

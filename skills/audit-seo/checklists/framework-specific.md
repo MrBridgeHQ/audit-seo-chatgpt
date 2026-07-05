@@ -1,4 +1,4 @@
-# Checklist — Pièges spécifiques par framework
+# Checklist - Pièges spécifiques par framework
 
 Référencé par `SKILL.md` § 4.7.
 
@@ -107,7 +107,7 @@ Référencé par `SKILL.md` § 4.7.
 
 ## WordPress
 
-- [ ] Un seul plugin SEO actif (Yoast OU Rank Math OU SEOPress — pas plusieurs)
+- [ ] Un seul plugin SEO actif (Yoast OU Rank Math OU SEOPress - pas plusieurs)
 - [ ] Thème ne duplique pas les balises gérées par le plugin SEO
 - [ ] Permalinks en mode « Nom de l'article » (`/sample-post/`), pas `?p=123`
 - [ ] Catégories & tags → stratégie : indexer ou non, pas les deux par défaut

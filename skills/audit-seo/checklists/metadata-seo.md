@@ -1,4 +1,4 @@
-# Checklist — Métadonnées
+# Checklist - Métadonnées
 
 Référencé par `SKILL.md` § 4.2.
 
@@ -34,19 +34,19 @@ Référencé par `SKILL.md` § 4.2.
 
 ## Open Graph
 
-- [ ] `og:title` — peut différer du `<title>`, optimisé pour le partage social
-- [ ] `og:description` — rédigée pour le clic social
-- [ ] `og:image` — **absolue**, ≥ 1200×630 px, < 8 MB, format JPG/PNG/WebP
+- [ ] `og:title` - peut différer du `<title>`, optimisé pour le partage social
+- [ ] `og:description` - rédigée pour le clic social
+- [ ] `og:image` - **absolue**, ≥ 1200×630 px, < 8 MB, format JPG/PNG/WebP
 - [ ] `og:image:width` / `og:image:height` renseignés
 - [ ] `og:image:alt` pour l'accessibilité
-- [ ] `og:url` — canonical absolue
-- [ ] `og:type` — `website` pour pages génériques, `article` pour articles
-- [ ] `og:site_name` — nom de marque
-- [ ] `og:locale` — `fr_FR`, `en_US`, etc.
+- [ ] `og:url` - canonical absolue
+- [ ] `og:type` - `website` pour pages génériques, `article` pour articles
+- [ ] `og:site_name` - nom de marque
+- [ ] `og:locale` - `fr_FR`, `en_US`, etc.
 
 ## Twitter Cards
 
-- [ ] `twitter:card` — `summary_large_image` recommandé pour articles et fiches
+- [ ] `twitter:card` - `summary_large_image` recommandé pour articles et fiches
 - [ ] `twitter:title`, `twitter:description`, `twitter:image` (peuvent reprendre l'OG)
 - [ ] `twitter:site` et `twitter:creator` (handles `@...`) si pertinent
 - [ ] Image distincte si stratégie de partage différente

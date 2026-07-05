@@ -5,7 +5,7 @@ description: Perform technical and content SEO audits of web projects from sourc
 
 # audit-seo
 
-Audit SEO complet d'un projet web à partir de son code source, de sa configuration, et — si une URL est fournie — d'un environnement local ou de production.
+Audit SEO complet d'un projet web à partir de son code source, de sa configuration, et - si une URL est fournie - d'un environnement local ou de production.
 
 > Le skill **n'écrit jamais** dans le projet sans confirmation explicite. Il **n'exécute pas** de commandes destructives, ni de déploiement, ni de publication.
 
@@ -25,7 +25,7 @@ Active ce skill quand l'utilisateur demande, en français ou en anglais :
 
 ---
 
-## 1bis. Boundaries — périmètre de l'audit
+## 1bis. Boundaries - périmètre de l'audit
 
 Ce skill audite des projets web **génériques** (Next.js, Nuxt, Astro, SvelteKit, Remix, Laravel, Symfony, WordPress, statique, SPA) à partir de leur code source. Il couvre le SEO **technique, on-page, structurel et de contenu**.
 
@@ -70,9 +70,9 @@ Si aucun argument n'est fourni, exécute l'audit complet sur le code source uniq
 
 ## 3. Workflow d'exécution
 
-Suis cette séquence dans l'ordre. Ne saute pas d'étape silencieusement — si une étape est impossible, indique-le dans le rapport final dans la section **« Limites de l'audit »**.
+Suis cette séquence dans l'ordre. Ne saute pas d'étape silencieusement - si une étape est impossible, indique-le dans le rapport final dans la section **« Limites de l'audit »**.
 
-### Étape 1 — Détection de la stack
+### Étape 1 - Détection de la stack
 
 Inspecte la racine du projet pour identifier le framework :
 
@@ -84,7 +84,7 @@ Inspecte la racine du projet pour identifier le framework :
 
 Consulte `references/framework-map.md` pour la correspondance fichiers ↔ framework et les pièges SEO spécifiques à chaque framework.
 
-### Étape 2 — Inventaire des fichiers critiques
+### Étape 2 - Inventaire des fichiers critiques
 
 Liste, sans lire intégralement, les fichiers SEO-pertinents :
 
@@ -95,13 +95,13 @@ Liste, sans lire intégralement, les fichiers SEO-pertinents :
 - **Assets** : `public/`, `static/`, `assets/`
 - **i18n** : `i18n/`, `locales/`, `next-intl`, `nuxt-i18n`, `@astrolicious/i18n`
 
-### Étape 3 — Détection des routes
+### Étape 3 - Détection des routes
 
 - Énumère les routes statiques et dynamiques du framework.
 - Détecte les pages probablement indexables (publiques, sans `noindex`).
 - Repère les routes orphelines (non liées depuis aucune autre page) ou les 404 connus.
 
-### Étape 4 — Audit du code source
+### Étape 4 - Audit du code source
 
 Exécute, en parallèle quand possible, les checklists des catégories demandées (`focus=...`) ou toutes si `focus=all`. Référence-toi à :
 
@@ -119,7 +119,7 @@ Pour chaque finding, capture :
 - la preuve (extrait de code, valeur observée)
 - la correction recommandée avec extrait de code suggéré
 
-### Étape 5 — Crawl optionnel (URL fournie)
+### Étape 5 - Crawl optionnel (URL fournie)
 
 Si une URL est fournie dans `$ARGUMENTS` :
 
@@ -130,11 +130,11 @@ Si une URL est fournie dans `$ARGUMENTS` :
    - balises `<h1>` à `<h6>`, attributs `alt`, liens internes
 3. Récupère `/robots.txt` et `/sitemap.xml` (et sitemaps imbriqués).
 4. Échantillonne 3 à 10 URLs depuis le sitemap pour vérifier la cohérence des templates.
-5. Si l'utilisateur n'a fourni aucune URL, **ne crawle rien** — limite-toi à l'analyse statique.
+5. Si l'utilisateur n'a fourni aucune URL, **ne crawle rien** - limite-toi à l'analyse statique.
 
 > Si tu n'as pas accès au réseau, ou si tu ne peux pas exécuter de fetch, indique-le dans **« Limites de l'audit »** et continue uniquement avec l'analyse statique.
 
-### Étape 6 — Priorisation
+### Étape 6 - Priorisation
 
 Trie les findings par impact SEO × effort :
 
@@ -143,11 +143,11 @@ Trie les findings par impact SEO × effort :
 - **Moyenne** : opportunité significative (Open Graph manquant, alt manquants, slugs faibles, maillage interne pauvre).
 - **Faible** : polish (cohérence stylistique des titles, méta description sub-optimale).
 
-### Étape 7 — Génération du rapport
+### Étape 7 - Génération du rapport
 
 Utilise `templates/report.md` comme structure. Le rapport est en **Markdown** par défaut. Si `output=json`, produis également un bloc JSON structuré final compatible avec un traitement automatisé.
 
-### Étape 8 — Propositions de correction
+### Étape 8 - Propositions de correction
 
 Pour les findings priorisés, prépare des correctifs **sous forme de propositions** (extraits de code, diffs). **Ne modifie aucun fichier sans demander confirmation explicite à l'utilisateur**, fichier par fichier ou par lot clairement identifié.
 
@@ -177,7 +177,7 @@ Voir `checklists/content-seo.md`. Couvre : duplication, cannibalisation, intenti
 Voir `checklists/framework-specific.md`. Couvre les pièges propres à chaque stack (App Router vs Pages Router Next.js, `useHead` Nuxt, content collections Astro, etc.).
 
 ### 4.8 AI search & AEO/GEO (2026)
-Voir `checklists/ai-search-seo.md`. Couvre les concerns SEO de l'ère AI-search : directives AI-crawlers dans `robots.txt` (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, Applebot-Extended, CCBot), standard émergent `llms.txt`/`llms-full.txt`, optimisation pour AI Overview / SGE / Perplexity citations, E-E-A-T pour AI search, anti-patterns spécifiques. Active cette catégorie systématiquement en 2026 — bloquer tous les `*Bot` AI sans réfléchir coupe l'opportunité d'apparaître dans les AI Overviews; ne pas avoir de stratégie explicite = défaut d'autorisation implicite, pas un choix.
+Voir `checklists/ai-search-seo.md`. Couvre les concerns SEO de l'ère AI-search : directives AI-crawlers dans `robots.txt` (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, Applebot-Extended, CCBot), standard émergent `llms.txt`/`llms-full.txt`, optimisation pour AI Overview / SGE / Perplexity citations, E-E-A-T pour AI search, anti-patterns spécifiques. Active cette catégorie systématiquement en 2026 - bloquer tous les `*Bot` AI sans réfléchir coupe l'opportunité d'apparaître dans les AI Overviews; ne pas avoir de stratégie explicite = défaut d'autorisation implicite, pas un choix.
 
 ---
 
@@ -185,17 +185,17 @@ Voir `checklists/ai-search-seo.md`. Couvre les concerns SEO de l'ère AI-search 
 
 Suis exactement la structure de `templates/report.md`. Sections obligatoires :
 
-1. **Résumé exécutif** — score /100, 3 à 5 problèmes prioritaires, impact estimé, urgence
-2. **Points critiques** — détaillés un par un
+1. **Résumé exécutif** - score /100, 3 à 5 problèmes prioritaires, impact estimé, urgence
+2. **Points critiques** - détaillés un par un
 3. **Audit technique**
 4. **Métadonnées**
 5. **Structure HTML**
 6. **Données structurées**
 7. **Performance SEO**
 8. **Contenu et maillage interne**
-9. **Recommandations priorisées** — tableau (Priorité, Action, Effort, Impact, Fichier/zone)
-10. **Plan d'action** — immédiat / cette semaine / à planifier
-11. **Limites de l'audit** — ce qui n'a pas pu être vérifié et pourquoi
+9. **Recommandations priorisées** - tableau (Priorité, Action, Effort, Impact, Fichier/zone)
+10. **Plan d'action** - immédiat / cette semaine / à planifier
+11. **Limites de l'audit** - ce qui n'a pas pu être vérifié et pourquoi
 
 Le score /100 est une **estimation indicative**, jamais présentée comme une mesure absolue. Documente brièvement la méthode de calcul (somme pondérée des pénalités par sévérité).
 
@@ -220,15 +220,15 @@ Le score /100 est une **estimation indicative**, jamais présentée comme une me
 
 Chargés automatiquement en contexte selon les besoins :
 
-- `templates/report.md` — squelette exact du rapport final
-- `checklists/technical-seo.md` — checklist SEO technique
-- `checklists/metadata-seo.md` — checklist métadonnées
-- `checklists/structured-data.md` — checklist données structurées
-- `checklists/performance-seo.md` — checklist performance / Core Web Vitals
-- `checklists/content-seo.md` — checklist contenu, structure HTML, maillage
-- `checklists/framework-specific.md` — pièges par framework
-- `checklists/ai-search-seo.md` — AI-crawlers, `llms.txt`, AI Overview / SGE, E-E-A-T pour AI search (2026)
-- `references/framework-map.md` — correspondance fichiers ↔ framework
-- `references/seo-thresholds.md` — seuils numériques (longueur title, description, etc.)
+- `templates/report.md` - squelette exact du rapport final
+- `checklists/technical-seo.md` - checklist SEO technique
+- `checklists/metadata-seo.md` - checklist métadonnées
+- `checklists/structured-data.md` - checklist données structurées
+- `checklists/performance-seo.md` - checklist performance / Core Web Vitals
+- `checklists/content-seo.md` - checklist contenu, structure HTML, maillage
+- `checklists/framework-specific.md` - pièges par framework
+- `checklists/ai-search-seo.md` - AI-crawlers, `llms.txt`, AI Overview / SGE, E-E-A-T pour AI search (2026)
+- `references/framework-map.md` - correspondance fichiers ↔ framework
+- `references/seo-thresholds.md` - seuils numériques (longueur title, description, etc.)
 
 Consulte ces fichiers à la demande pendant l'audit ; ne les recopie pas intégralement dans le rapport.

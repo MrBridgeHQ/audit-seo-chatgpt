@@ -1,4 +1,4 @@
-# Checklist — Performance SEO & Core Web Vitals
+# Checklist - Performance SEO & Core Web Vitals
 
 Référencé par `SKILL.md` § 4.5.
 

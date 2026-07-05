@@ -1,4 +1,4 @@
-# Installation — audit-seo (ChatGPT / Codex skill)
+# Installation - audit-seo (ChatGPT / Codex skill)
 
 This is the **Codex skill** packaging of `audit-seo`. It is a pure-instruction skill: Markdown doctrine files plus an `agents/openai.yaml` interface descriptor. **No Python, no dependencies, no network calls.**
 
@@ -73,7 +73,7 @@ Or run the slash form if your Codex setup exposes it:
 
 ## Offline by design
 
-Static analysis (stack detection, file inventory, checklist review, report generation) runs entirely from the project source with no network access. The **only** time the skill touches the network is the optional crawl step — and only against a URL you provide that is `localhost` or a domain you own (it asks for confirmation otherwise). If no URL is given, or no network is available, it limits itself to static analysis and says so in the report's "Limites de l'audit" section.
+Static analysis (stack detection, file inventory, checklist review, report generation) runs entirely from the project source with no network access. The **only** time the skill touches the network is the optional crawl step - and only against a URL you provide that is `localhost` or a domain you own (it asks for confirmation otherwise). If no URL is given, or no network is available, it limits itself to static analysis and says so in the report's "Limites de l'audit" section.
 
 ## Updating the skill
 
@@ -101,7 +101,7 @@ Remove-Item -Recurse -Force "$env:USERPROFILE\.codex\skills\audit-seo"
 Activation depends on the `description` in `SKILL.md`'s front-matter and on `allow_implicit_invocation: true` in `agents/openai.yaml`. If your phrasing doesn't match, force it: "Use the audit-seo skill to...".
 
 **The skill wants to crawl a URL.**
-By design it only fetches a URL you explicitly pass, and only if it's `localhost` or a domain you own. It will ask for confirmation before crawling anything else. To stay fully offline, just don't pass a URL — the static audit runs on source alone.
+By design it only fetches a URL you explicitly pass, and only if it's `localhost` or a domain you own. It will ask for confirmation before crawling anything else. To stay fully offline, just don't pass a URL - the static audit runs on source alone.
 
 **The report says many things "could not be verified."**
 That's expected when no live URL, build, or analytics access is available. Static analysis flags anti-patterns in code; measured values (real status codes, Core Web Vitals, index coverage) require a crawl or external tooling, which the skill honestly lists as out of scope for that run.
